@@ -1,0 +1,61 @@
+.n-wrapper {
+  height: 10vh;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+  top: 0;
+  font-family: 'Playfair Display', serif;
+}
+.n-left {
+  flex: 1;
+  align-items: center;
+  justify-content: left;
+  display: flex;
+  gap: 2rem;
+}
+
+.n-name img{
+width: 50px;
+border-radius: 100%;
+}
+.n-right {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  /* font-weight: 800; */
+  font-family: 'Playfair Display', serif;
+}
+
+.n-list {
+  flex: 10;
+  font-family: 'Playfair Display', serif;
+}
+.n-list > ul {
+  display: flex;
+  gap: 1.6rem;
+  font-weight: 700;
+  margin-right: 4rem;
+  font-family: 'Playfair Display', serif;
+}
+
+.n-list li a{
+  font-weight: 500;
+  font-family: inherit;
+  font-size: 23px;
+  
+}
+.n-list > ul :hover {
+  color: var(--orange);
+  cursor: pointer;
+}
+
+.n-button {
+  flex: 2;
+}
+
+@media screen and (max-width: 480px) {
+  .n-list {
+    display: none;
+  }
+}
